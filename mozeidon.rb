@@ -8,29 +8,29 @@ class Mozeidon < Formula
   version "1.0.0"
 
   on_macos do
-    url "https://github.com/egovelox/mozeidon/releases/download/v1.0.0/mozeidon-cli_Darwin_all.tar.gz"
-    sha256 "15508f42a7a7a84383c18bc783f30100c17ed4f7d38fbd4427073a327b4d0c02"
+    url "https://github.com/egovelox/mozeidon/releases/download/v1.0.0/mozeidon_Darwin_all.tar.gz"
+    sha256 "4213db8b96535c0254f4b4bf551d0d37aca719a6d0be9ed1d6874472a74546d8"
 
     def install
-      bin.install "mozeidon-cli"
+      bin.install "mozeidon"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/egovelox/mozeidon/releases/download/v1.0.0/mozeidon-cli_Linux_arm64.tar.gz"
-      sha256 "cf06c755e125bea5d4dca5f3c22a2b121af918a823d08d0572742b4d139cd321"
+      url "https://github.com/egovelox/mozeidon/releases/download/v1.0.0/mozeidon_Linux_arm64.tar.gz"
+      sha256 "c4ddd1d1bb456e6707888a3cd2a6ebf3628cfdc36df83dda995205d67ab5a59c"
 
       def install
-        bin.install "mozeidon-cli"
+        bin.install "mozeidon"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/egovelox/mozeidon/releases/download/v1.0.0/mozeidon-cli_Linux_x86_64.tar.gz"
-      sha256 "c8ad2d63b444a19b4481571c41a02adb0d2ba1bc74e74c39181c0d7214d74dbb"
+      url "https://github.com/egovelox/mozeidon/releases/download/v1.0.0/mozeidon_Linux_x86_64.tar.gz"
+      sha256 "393dbfc771f8ebdb2579a05e3a3bbf34e7e9d04e7cea4f444f3b1cf927639eaf"
 
       def install
-        bin.install "mozeidon-cli"
+        bin.install "mozeidon"
       end
     end
   end
