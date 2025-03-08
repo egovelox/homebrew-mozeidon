@@ -5,11 +5,11 @@
 class Mozeidon < Formula
   desc ""
   homepage "https://github.com/egovelox/mozeidon"
-  version "1.0.1"
+  version "2.0.0"
 
   on_macos do
-    url "https://github.com/egovelox/mozeidon/releases/download/v1.0.1/mozeidon_Darwin_all.tar.gz"
-    sha256 "343a4c08d6b3a93b57dd1810f6c61779c1294768b16b46494f48f45318bae8fd"
+    url "https://github.com/egovelox/mozeidon/releases/download/v2.0.0/mozeidon_Darwin_all.tar.gz"
+    sha256 "093144ebe0be734d42aea2ceaea436ca96cb1acf679ded2cdc18e1a3f92a0328"
 
     def install
       bin.install "mozeidon"
@@ -19,8 +19,8 @@ class Mozeidon < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/egovelox/mozeidon/releases/download/v1.0.1/mozeidon_Linux_x86_64.tar.gz"
-        sha256 "83edda455583b6bd0a2753deedc91058acc63d11f3dca1a5e3e20d4feb4cb29a"
+        url "https://github.com/egovelox/mozeidon/releases/download/v2.0.0/mozeidon_Linux_x86_64.tar.gz"
+        sha256 "5d786dddb74b18f87aa5ac3e01bd96ae7bfbbcb73b6f50add1c6ec782ba246f2"
 
         def install
           bin.install "mozeidon"
@@ -29,8 +29,8 @@ class Mozeidon < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/egovelox/mozeidon/releases/download/v1.0.1/mozeidon_Linux_arm64.tar.gz"
-        sha256 "b536ea1286ac3fb06751d13c826ac66ee7495e4900bc9950650ad7b26bf98868"
+        url "https://github.com/egovelox/mozeidon/releases/download/v2.0.0/mozeidon_Linux_arm64.tar.gz"
+        sha256 "d7b8ec81b49cec6e4da02f645def8119c999bc02b125f09da17d3aa023388505"
 
         def install
           bin.install "mozeidon"
